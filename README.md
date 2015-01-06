@@ -1,7 +1,7 @@
 archpi-config
 =============
 
-Configuration tool for the Raspberry Pi
+Configuration tool for the Raspberry Pi (WARNING, this is in a very early stage, i just get working overclock and change the hostname)
 
 
 How to Install:
