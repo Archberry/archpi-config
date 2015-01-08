@@ -6,12 +6,11 @@ arch=("armv6h")
 url="https://github.com/Archberry/archpi-config"
 license=("GPL3")
 depends=("lua" "libnewt")
-optdepends=("lib32-simplescreenrecorder: OpenGL recording of 32-bit 
-applications")
 makedepends=("git")
-source=("https://raw.githubusercontent.com/Archberry/archpi-config/master/archpi-config"
+source=("https://raw.githubusercontent.com/Archberry/archpi-config/master/archpi-config")
+md5sums=('940dc87bf3a6e15c3da51281dea54d47')
 
-package() {
+package(){
   mkdir -p $pkgdir/bin
   cp $srcdir/archpi-config $pkgdir/bin/
   chmod +x $pkgdir/bin/archpi-config
