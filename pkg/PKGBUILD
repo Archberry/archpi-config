@@ -1,6 +1,6 @@
 pkgname=archpi-config
 pkgver=0.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A port for ArchlinuxARM of raspi-config"
 arch=("armv6h")
 url="https://github.com/Archberry/archpi-config"
@@ -11,7 +11,7 @@ source=("https://raw.githubusercontent.com/Archberry/archpi-config/master/archpi
 md5sums=('940dc87bf3a6e15c3da51281dea54d47')
 
 package(){
-  mkdir -p $pkgdir/bin
-  cp $srcdir/archpi-config $pkgdir/bin/
-  chmod +x $pkgdir/bin/archpi-config
+  install -d $pkgdir/usr/bin
+  cp $srcdir/archpi-config $pkgdir/usr/bin
+  chmod +x $pkgdir/usr/bin/archpi-config
 }
