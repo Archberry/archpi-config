@@ -1,0 +1,18 @@
+pkgname=archpi-config
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="A port for ArchlinuxARM of raspi-config"
+arch=("armv6h")
+url="https://github.com/Archberry/archpi-config"
+license=("GPL3")
+depends=("lua" "libnewt")
+optdepends=("lib32-simplescreenrecorder: OpenGL recording of 32-bit 
+applications")
+makedepends=("git")
+source=("https://raw.githubusercontent.com/Archberry/archpi-config/master/archpi-config"
+
+package() {
+  mkdir -p $pkgdir/bin
+  cp $srcdir/archpi-config $pkgdir/bin/
+  chmod +x $pkgdir/bin/archpi-config
+}
